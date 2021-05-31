@@ -1,0 +1,30 @@
+﻿@page "{id:int}"
+@model RazorWebPageApp.Pages.Employees.DetailsModel
+@{
+}
+<h2>Details</h2>
+<table class="table">
+    <tr>
+        <th>Employee Id</th>
+        <td>@Model.Employee.Id</td>
+    </tr>
+    <tr>
+        <th>Employee Name</th>
+        <td>@Model.Employee.Name</td>
+    </tr>
+    <tr>
+        <th>Employee Email</th>
+        <td>@Model.Employee.Email</td>
+    </tr>
+    <tr>
+        <th>Department</th>
+        <td>@Model.Employee.Department</td>
+    </tr>
+    <tr>
+        <td>
+            <a asp-page="index" class="btn btn-info">Back</a>
+            <a href="#" class="btn btn-warning">Edit</a>
+            <a href="#" class="btn btn-warning">Delete</a>
+        </td>
+    </tr>
+</table>
